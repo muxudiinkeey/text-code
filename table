@@ -1,0 +1,96 @@
+
+  <div class="row">
+ <div class="col-8">
+  <div class="card">
+    <div class="card-header bg-secondary text-white">
+      <h5>Users</h5>
+<div class="card-body">
+ <div class="row">
+  <div class="col-12">
+
+    <table class="table table-hover">
+  
+      <thead>
+
+        <th>email</th>
+        
+      </thead>
+      
+      <tbody>
+        @for (user of users$ | async; track user.id){
+        <tr>
+          <td>{{ user.id }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.username }}</td>
+          <td>{{user.email}}</td>
+          <td>
+         <span>
+          
+            <button class="btn btn-small btn-primary">Edit-user</button>
+            <button class="btn btn-small  btn-warning" style="margin-left: 10px;">delete-user</button>
+            
+         </span>
+         
+          </td>
+         }
+      </tbody>
+      <!-- <div><button class="btn btn-primary" type="submit">Submit</button></div> -->
+      <div><button class="btn btn-light" style="margin-top: 10px; margin-left: 10px;">Add-user</button></div>
+    </table> 
+  </div>
+
+ </div>
+</div>
+
+    </div>
+
+  </div>
+
+ </div>
+ <div class="col-4">
+  <div class="card">
+    <div class="card-header bg-secondary text-white">
+      new user
+
+    </div>
+<div class="card-body">
+<div class="row">
+  <div class="col-4">
+<label for="">id</label>
+<input type="text" class="form-control">
+  </div>
+  <div class="col-8">
+<label for="">name</label>
+<input type="text" class="form-control">
+  </div>
+  <div class="col-12">
+<label for="">UserName</label>
+<input type="text" class="form-control">
+  </div>
+  <div class="col-12">
+<label for="">Email</label>
+<input type="text" class="form-control">
+  </div>
+
+</div>
+
+<div class="row pt-2">
+  <div class="col-6 text-center">
+<button class="btn btn-secondary">Reset</button>
+  </div>
+
+  <div class="col-6 text-center">
+    <button class="btn btn-secondary">Save</button>
+  </div>
+
+ </div>
+</div>
+
+  </div>
+
+ </div>
+
+ 
+  </div>        <th>id</th>
+        <th>name</th>
+        <th>UserName</th>
