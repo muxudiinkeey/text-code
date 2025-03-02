@@ -1,4 +1,47 @@
 
+user service
+  http = inject (HttpClient);
+ private Url='https://jsonplaceholder.typicode.com/users';
+
+ //users : user [] = []
+
+  getUsers(): Observable<user[]>{
+   return this.http.get<user[]>('${this.url}')
+  }
+  getUser(): Observable<user>{
+   return this.http.get<user>('${this.url}/1')
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.....................................
 <div class="card m-3">
     <div class="card-header text-info text-center"><h4 >User form</h4></div>
     <div class="card-body">
