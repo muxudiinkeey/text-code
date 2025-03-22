@@ -1,5 +1,0 @@
-  <div>      <div style="background-color: rgb(131, 106, 74);">
-    <span style="padding-left: 2px;"><button class="btn btn-primary">AddPost</button></span>
-  <span style="padding-left:10px ;"><button class="btn btn-danger">DeletPost</button></span>
-  <span style="padding-left:10px ;"><button class="btn btn-success">updatePost</button></span></div>
-</div>  
