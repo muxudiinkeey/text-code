@@ -69,3 +69,14 @@
 
 
 ```
+
+('http://jsonplaceholder.typicode.com/posts?_limit=10');
+
+poweisheel-chache
+.................
+PS C:\Users\mohia> npm cache verify
+Cache verified and compressed (~\AppData\Local\npm-cache\_cacache)
+Content verified: 0 (0 bytes)
+Index entries: 0
+Finished in 0.017s
+PS C:\Users\mohia>
